@@ -1,0 +1,129 @@
+body{
+    background-color: black;
+ }
+ 
+ .container{
+    top: 20px;
+    text-align: center;
+    height: 60px;
+    width: 100%;
+    font-size: 40px;
+    color: white;
+ }
+ 
+ .stopwatch-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+ }
+ 
+ .stopwatch {
+    width: 370px;
+    height: 370px;
+    top: 1px;
+    border-radius: 50%;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    background-image:  url('static/dial.jpg');
+    background-size: cover;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 0.1;
+ }
+ 
+ .timer-display {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 100px;
+    color: white;
+ }
+ 
+ 
+ .controls {
+    margin-top: 240px;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: inherit;
+ }
+ 
+ .btn {
+    padding: 10px 10px;
+    height: 80px;
+    width: 80px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    border-radius: 50%;
+ }
+  
+ 
+ .start-btn {
+    background-color: black;
+    border: 2px solid white;
+    background-image: url('static/playnog.jpg');
+    background-size: cover;
+ }
+ 
+ .start-btn:hover{
+    border: 3px solid white;
+ }
+ 
+ .reset-btn {
+    height: 60px;
+    width: 60px;
+    border: 2px solid white;
+    background-image: url('static/reset.png');
+    background-size: cover;
+ }
+ 
+ .reset-btn:hover{
+    border: 2px solid black;
+ }
+ 
+ .lap-btn {
+    height: 60px;
+    width: 60px;
+    border: 2px solid white;
+    background-image: url('static/flag.png');
+    background-size: cover;
+ }
+ 
+ .lap-btn:hover{
+    border: 2px solid black;
+ }
+ 
+ .disabled {
+    opacity: 0.5;
+    cursor: default;
+ }
+ 
+ .laps {
+    top: 0;
+    left: 0;
+    list-style: none;
+    padding: 0;
+    top: 450px;
+    width: 100%;
+    color: wheat;
+ }
+ 
+ .lap {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+ }
+ 
+ .lap-number {
+    font-weight: bold;
+ }
+ 
+ .lap-time {
+    font-size: 14px;
+ }
